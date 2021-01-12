@@ -10,6 +10,7 @@ before_install:
   - |
     if [ "$TRAVIS_CPU_ARCH" = "ppc64le" ]; then 
       npm install generator;  # Install generator for ppc64le
+      npm install phoenix; # install phoenix for ppc64le
       npm install -g;
     fi  
   - npm install --global npm@latest
